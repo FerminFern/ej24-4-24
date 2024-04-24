@@ -61,9 +61,9 @@ int main(void){
     s("%d", &num2);
     
     if(num1>num2)
-        p(" El n%cmero %d es mayor que %d",163,num1,num2);
+        p("El n%cmero %d es mayor que %d",163,num1,num2);
     else if (num1<num2)
-        p(" El n%cmero %d es menor que %d",163,num1,num2);
+        p("El n%cmero %d es menor que %d",163,num1,num2);
     else 
         p("El n%cmero %d es igual que %d",163,num1,num2);
     return 0;
