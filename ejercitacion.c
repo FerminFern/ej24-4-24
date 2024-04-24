@@ -56,7 +56,7 @@ int main(void){
 int main(void){
     int num1, num2;
 
-    p("Ingrese dos n%cmeros: \n", 163);
+    p("Ingrese dos n%cmeros:\n", 163);
     s("%d", &num1);
     s("%d", &num2);
     
