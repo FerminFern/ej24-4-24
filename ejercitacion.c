@@ -129,8 +129,8 @@ int main(void){
 
 // Ejercicio inventado por el profe
 // ingresar o pedir por pantalla un numero entero entre el 1 y el 7 e indicar a que dia de la semana pertenece.
-//1 lunes :)
-//indicar si no corresponde
+// 1 lunes :)
+// indicar si no corresponde
 
 int main()
 {
@@ -138,7 +138,8 @@ int main()
     p("ingrese un n%cmero entero entre el 1 y el 7: \n", 163);
     s("%d", &dia);
 
-    if (dia > 0 && dia <= 7)
+    // Sin switch
+    /* if (dia > 0 && dia <= 7)
     {
         if (dia == 1)
             p("el d%ca es lunes", 161);
@@ -156,6 +157,35 @@ int main()
             p("el d%ca es domingo", 161);
     }
     else
-        p("No ingres%c un n%cmero v%clido", 162, 163, 160);
+        p("No ingres%c un n%cmero v%clido", 162, 163, 160);*/
+    // Con switch
+
+    switch (dia)
+    {
+    case 1:
+        p("Lunes");
+        break;
+    case 2:
+        p("Martes");
+        break;
+    case 3:
+        p("Miercoles");
+        break;
+    case 4:
+        p("Jueves");
+        break;
+    case 5:
+        p("Viernes");
+        break;
+    case 6:
+        p("Sabado");
+        break;
+    case 7:
+        p("Domingo");
+        break;
+    default:
+        p("No registrado");
+        break;
+    }
     return 0;
 }
