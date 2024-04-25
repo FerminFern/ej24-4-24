@@ -128,6 +128,9 @@ int main(void){
 } */
 
 // Ejercicio inventado por el profe
+// ingresar o pedir por pantalla un numero entero entre el 1 y el 7 e indicar a que dia de la semana pertenece.
+//1 lunes :)
+//indicar si no corresponde
 
 int main()
 {
