@@ -108,21 +108,51 @@ int main(void){
 } */
 
 // Ejericio 2.4
-int main()
+/* int main()
 {
     int renta;
     p("ingrese su renta mensual \n");
     s("%d", &renta);
 
-    if (renta < 100000)
+    if (renta < 100000 && renta>0)
         p("su porcentaje impositivo equivale a 5%c", 37);
-    else if (renta >= 100000 && renta < 350000)
+    else if (renta < 350000)
         p("su porcentaje impositivo equivale a 15%c", 37);
-    else if (renta >= 350000 && renta < 700000)
+    else if (renta < 700000)
         p("su porcentaje impositivo equivale a 20%c", 37);
-    else if (renta >= 700000 && renta <= 1000000)
+    else if (renta <= 1000000)
         p("su porcentaje impositivo equivale a 30%c", 37);
-    else 
+    else
         p("su porcentaje impositivo equivale a 45%c", 37);
+    return 0;
+} */
+
+// Ejercicio inventado por el profe
+
+int main()
+{
+    int dia;
+    p("ingrese un n%cmero entero entre el 1 y el 7: \n", 163);
+    s("%d", &dia);
+
+    if (dia > 0 && dia <= 7)
+    {
+        if (dia == 1)
+            p("el d%ca es lunes", 161);
+        else if (dia == 2)
+            p("el d%ca es martes", 161);
+        else if (dia == 3)
+            p("el d%ca es mi%crcoles", 161, 130);
+        else if (dia == 4)
+            p("el d%ca es jueves", 161);
+        else if (dia == 5)
+            p("el d%ca es viernes", 161);
+        else if (dia == 6)
+            p("el d%ca es s%cbado", 161, 160);
+        else
+            p("el d%ca es domingo", 161);
+    }
+    else
+        p("No ingres%c un n%cmero v%clido", 162, 163, 160);
     return 0;
 }
